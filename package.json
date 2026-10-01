@@ -1,0 +1,17 @@
+{
+  "name": "logistics-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Zero-dependency Node.js logistics API with caching, coalescing and backpressure",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test \"test/*.test.js\"",
+    "test:shutdown": "node test/shutdown.check.js",
+    "bench": "node bench/bench.js"
+  }
+}
